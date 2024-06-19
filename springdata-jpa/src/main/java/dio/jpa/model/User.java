@@ -14,16 +14,16 @@ public class User {
     @Column(length = 50, nullable = false)
     private String username;
     @Column(length = 20, nullable = false)
-    private String passaword;
+    private String password;
     @Column(length = 100, nullable = false)
 
 
     public String getPassaword() {
-        return passaword;
+        return password;
     }
 
-    public void setPassaword(String passaword) {
-        this.passaword = passaword;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getUsername() {
@@ -48,7 +48,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", username='" + username + '\'' +
-                ", passaword='" + passaword + '\'' +
+                ", password='" + password + '\'' +
                 '}';
     }
 }
